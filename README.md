@@ -18,16 +18,13 @@ llvm/lib/Transforms/Backdoor/
 
 You must link the new folder in the build system.
 
-#### 1. Modify `llvm/lib/Transforms/CMakeLists.txt`
+#### Modify `llvm/lib/Transforms/CMakeLists.txt`
 
 Add the following line at the end of the file to include your new folder:
 
 ```cmake
 add_subdirectory(Backdoor)
 ```
-
-#### 2. Create/Update `llvm/lib/Transforms/Backdoor/`
-Copy the source files from the repo into here
 
 ### Pass Registration
 
